@@ -1,1 +1,137 @@
 
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مُسَابَقَاتُ قَصَصِ الْأَنْبِيَاءِ</title>
+    <!-- Google Fonts included for a highly readable and large Arabic font (Cairo) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cairo', system-ui, sans-serif;
+            background-color: #FDFDFD;
+            color: #1A1A1A;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* No colored banner, just a clean separation */
+        header {
+            padding: 50px 20px;
+            background-color: #FFFFFF;
+            border-bottom: 2px solid #E5E5E5;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 900;
+            margin: 0 0 15px 0;
+            color: #222222;
+        }
+
+        .subtitle {
+            font-size: 2rem;
+            font-weight: 400;
+            color: #555555;
+            margin: 0;
+        }
+
+        main {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        /* Large, clickable cards for kids */
+        .quiz-card {
+            display: block;
+            background-color: #FFFFFF;
+            border: 3px solid #DDDDDD;
+            border-radius: 20px;
+            padding: 40px 20px;
+            text-decoration: none;
+            color: #1A1A1A;
+            font-size: 2.5rem;
+            font-weight: 700;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .quiz-card:hover {
+            transform: translateY(-8px);
+            border-color: #999999;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Coming soon section */
+        .coming-soon-section {
+            margin-top: 60px;
+            padding: 40px;
+            border: 3px dashed #CCCCCC;
+            border-radius: 20px;
+            background-color: #FAFAFA;
+        }
+
+        .coming-soon-text {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #777777;
+            margin: 0;
+        }
+        
+        .coming-soon-subtext {
+            font-size: 1.5rem;
+            color: #999999;
+            margin-top: 10px;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>مُسَابَقَاتُ قَصَصِ الْأَنْبِيَاءِ</h1>
+        <p class="subtitle">اِخْتَارُوا نَبِيًّا لِتَبْدَأُوا الْمُسَابَقَةَ</p>
+    </header>
+
+    <main>
+        <div class="grid-container">
+            <a href="https://yekoshy.github.io/AnbiyaaQuizzes/adam.html" class="quiz-card">
+                آدَمُ عَلَيْهِ السَّلَامُ
+            </a>
+            
+            <a href="https://yekoshy.github.io/AnbiyaaQuizzes/noah.html" class="quiz-card">
+                نُوحٌ عَلَيْهِ السَّلَامُ
+            </a>
+            
+            <a href="https://yekoshy.github.io/AnbiyaaQuizzes/hud.html" class="quiz-card">
+                هُودٌ عَلَيْهِ السَّلَامُ
+            </a>
+            
+            <a href="https://yekoshy.github.io/AnbiyaaQuizzes/salih.html" class="quiz-card">
+                صَالِحٌ عَلَيْهِ السَّلَامُ
+            </a>
+            
+            <a href="https://yekoshy.github.io/AnbiyaaQuizzes/musa.html" class="quiz-card">
+                مُوسَى عَلَيْهِ السَّلَامُ
+            </a>
+        </div>
+
+        <div class="coming-soon-section">
+            <p class="coming-soon-text">وَقَرِيبًا الْمَزِيدُ مِنَ الْأَنْبِيَاءِ...</p>
+            <p class="coming-soon-subtext">إِنْ شَاءَ اللَّهُ</p>
+        </div>
+    </main>
+
+</body>
+</html>
