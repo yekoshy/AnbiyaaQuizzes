@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -12,31 +11,31 @@
     <style>
         body {
             font-family: 'Cairo', system-ui, sans-serif;
-            background-color: #FDFDFD;
+            background-color: #FFFFFF; /* Pure white background */
             color: #1A1A1A;
             margin: 0;
             padding: 0;
             text-align: center;
         }
 
-        /* No colored banner, just a clean separation */
+        /* Clean separation with white background */
         header {
             padding: 50px 20px;
             background-color: #FFFFFF;
-            border-bottom: 2px solid #E5E5E5;
+            border-bottom: 3px dashed #E0E0E0;
         }
 
         h1 {
             font-size: 3.5rem;
             font-weight: 900;
             margin: 0 0 15px 0;
-            color: #222222;
+            color: #3949AB; /* Colorful font for main title */
         }
 
         .subtitle {
             font-size: 2rem;
-            font-weight: 400;
-            color: #555555;
+            font-weight: 700;
+            color: #00897B; /* Colorful font for subtitle */
             margin: 0;
         }
 
@@ -52,15 +51,15 @@
             gap: 30px;
         }
 
-        /* Large, clickable cards for kids */
+        /* Large, clickable colorful cards for kids */
         .quiz-card {
             display: block;
-            background-color: #FFFFFF;
-            border: 3px solid #DDDDDD;
+            background-color: #FFFFFF; /* White background inside cards */
+            border-width: 4px;
+            border-style: solid;
             border-radius: 20px;
             padding: 40px 20px;
             text-decoration: none;
-            color: #1A1A1A;
             font-size: 2.5rem;
             font-weight: 700;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
@@ -69,29 +68,76 @@
 
         .quiz-card:hover {
             transform: translateY(-8px);
-            border-color: #999999;
-            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Individual Card Colors (Frames and Fonts) */
+        .card-adam {
+            border-color: #E53935;
+            color: #E53935;
+        }
+        .card-adam:hover {
+            box-shadow: 0 10px 15px rgba(229, 57, 53, 0.3);
+        }
+
+        .card-noah {
+            border-color: #1E88E5;
+            color: #1E88E5;
+        }
+        .card-noah:hover {
+            box-shadow: 0 10px 15px rgba(30, 136, 229, 0.3);
+        }
+
+        .card-hud {
+            border-color: #43A047;
+            color: #43A047;
+        }
+        .card-hud:hover {
+            box-shadow: 0 10px 15px rgba(67, 160, 71, 0.3);
+        }
+
+        .card-salih {
+            border-color: #F57C00;
+            color: #F57C00;
+        }
+        .card-salih:hover {
+            box-shadow: 0 10px 15px rgba(245, 124, 0, 0.3);
+        }
+
+        .card-shuaib {
+            border-color: #D81B60;
+            color: #D81B60;
+        }
+        .card-shuaib:hover {
+            box-shadow: 0 10px 15px rgba(216, 27, 96, 0.3);
+        }
+
+        .card-musa {
+            border-color: #8E24AA;
+            color: #8E24AA;
+        }
+        .card-musa:hover {
+            box-shadow: 0 10px 15px rgba(142, 36, 170, 0.3);
         }
 
         /* Coming soon section */
         .coming-soon-section {
             margin-top: 60px;
             padding: 40px;
-            border: 3px dashed #CCCCCC;
+            border: 4px dashed #26C6DA; /* Colorful dashed border */
             border-radius: 20px;
-            background-color: #FAFAFA;
+            background-color: #FFFFFF; /* White background */
         }
 
         .coming-soon-text {
             font-size: 2.5rem;
             font-weight: 700;
-            color: #777777;
+            color: #E53935; /* Colorful text */
             margin: 0;
         }
         
         .coming-soon-subtext {
             font-size: 1.5rem;
-            color: #999999;
+            color: #F57C00; /* Colorful subtext */
             margin-top: 10px;
             font-weight: 700;
         }
@@ -106,23 +152,28 @@
 
     <main>
         <div class="grid-container">
-            <a href="https://yekoshy.github.io/AnbiyaaQuizzes/adam.html" class="quiz-card">
+            <a href="https://yekoshy.github.io/AnbiyaaQuizzes/adam.html" class="quiz-card card-adam">
                 آدَمُ عَلَيْهِ السَّلَامُ
             </a>
             
-            <a href="https://yekoshy.github.io/AnbiyaaQuizzes/noah.html" class="quiz-card">
+            <a href="https://yekoshy.github.io/AnbiyaaQuizzes/noah.html" class="quiz-card card-noah">
                 نُوحٌ عَلَيْهِ السَّلَامُ
             </a>
             
-            <a href="https://yekoshy.github.io/AnbiyaaQuizzes/hud.html" class="quiz-card">
+            <a href="https://yekoshy.github.io/AnbiyaaQuizzes/hud.html" class="quiz-card card-hud">
                 هُودٌ عَلَيْهِ السَّلَامُ
             </a>
             
-            <a href="https://yekoshy.github.io/AnbiyaaQuizzes/salih.html" class="quiz-card">
+            <a href="https://yekoshy.github.io/AnbiyaaQuizzes/salih.html" class="quiz-card card-salih">
                 صَالِحٌ عَلَيْهِ السَّلَامُ
             </a>
+
+            <!-- The newly added Shuaib (PBUH) link -->
+            <a href="https://yekoshy.github.io/AnbiyaaQuizzes/shuaib.html" class="quiz-card card-shuaib">
+                شُعَيْبٌ عَلَيْهِ السَّلَامُ
+            </a>
             
-            <a href="https://yekoshy.github.io/AnbiyaaQuizzes/musa.html" class="quiz-card">
+            <a href="https://yekoshy.github.io/AnbiyaaQuizzes/musa.html" class="quiz-card card-musa">
                 مُوسَى عَلَيْهِ السَّلَامُ
             </a>
         </div>
